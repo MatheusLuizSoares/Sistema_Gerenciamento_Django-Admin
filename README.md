@@ -39,7 +39,9 @@ Acesse o painel administrativo em [http://localhost:8000/admin](http://localhost
 
 ![alt text](image-4.png)
 
-![alt text](image-5.png)
+![image](https://github.com/user-attachments/assets/a30c9d5c-f0a6-4e00-b4ff-416b846ed2b3)
+
+
 
 ![alt text](image-6.png)
 
