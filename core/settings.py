@@ -21,6 +21,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    "jazzmin" ,
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -28,6 +29,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
      "products",
+     
 ]
 
 MIDDLEWARE = [
@@ -111,3 +113,36 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+JAZZMIN_SETTINGS = {
+    # Configurações básicas de aparência
+    "site_title": "MarkIt",
+    "site_header": "MarkIt",
+    "site_brand": "MarkIt",
+    
+    # Configurações de tema
+    "theme": "default",  # Padrão (light)
+    "dark_mode_theme": None,  # Pode ser "dark" para tema escuro
+    
+    # Personalização de UI
+    "show_ui_builder": True,  # Ativa o painel de personalização
+    
+    # Textos traduzidos para o UI Builder
+    "ui_builder_texts": {
+        "Customize": "Personalizar Tema",
+        "Theme": "Tema Principal",
+        "default": "Claro",
+        "Dark Theme": "Tema Escuro",
+        "None": "Desativado",
+        "Body": "Corpo do Site",
+        "NavBar": "Barra Superior",
+        "SideBar": "Menu Lateral", 
+        "Brand": "Logo/Marca",
+        "Flat style": "Estilo Minimalista",
+        "Compact": "Modo Compacto"
+    },
+    
+    # Configurações visuais básicas
+    "navigation_expanded": True,  # Menu lateral expandido
+    "changeform_format": "horizontal_tabs"  # Abas horizontais nos formulários
+}
